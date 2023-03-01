@@ -1,0 +1,19 @@
+@import './section-1.scss';
+@import './section-2.scss';
+@import './section-3.scss';
+
+.section-heading {
+  max-width: 671px;
+  margin: 0 auto;
+}
+
+.subheading {
+  max-width: 671px;
+  margin: 1.42rem auto 0;
+  font-weight: 300;
+  font-size: 1.42rem;
+  line-height: 2.2rem;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+}

@@ -1,0 +1,122 @@
+.options {
+  display: flex;
+  justify-content: space-between;
+  gap: $standard-gap;
+  flex-wrap: wrap;
+
+  line-height: 27px;
+}
+
+.options-columns {
+  width: max(45%, 400px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: $standard-gap;
+}
+
+.minor-features-heading {
+  padding-bottom: 1.9rem;
+  font-weight: 400;
+  font-size: 1.9rem;
+  line-height: 2.9rem;
+}
+
+.fuel-module {
+  padding-bottom: 30px;
+
+  .options-text {
+    padding-bottom: 2rem;
+
+    .underline-txt {
+      padding-bottom: 1rem;
+      border-bottom: 1px solid rgba(255, 207, 122, 0.72);
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.suboptions {
+  padding-bottom: 7.14rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: $standard-gap;
+
+  &-heading {
+    margin-bottom: 2.5rem;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    color: #757575;
+  }
+}
+
+.multimedia-insertion {
+  margin-top: 2.8rem;
+  position: relative;
+  width: 100%;
+  padding-top: 64.43%;
+  background-color: black;
+
+  .controls {
+    position: absolute;
+    left: 2rem;
+    bottom: 2rem;
+    display: flex;
+    gap: $standard-gap;
+  }
+}
+
+.catalog-ordering {
+  margin: 7.3rem auto 7.14rem;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 44px;
+
+  text-align: center;
+
+  &-text {
+    margin-bottom: 2.8rem;
+  }
+}
+
+.accessories .options-text {
+  max-width: 327px;
+}
+
+.get-catalog-btn {
+  width: 284px;
+  height: 60px;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  transition: 0.3s;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 184px;
+    height: 124px;
+    right: -10%;
+    top: -150%;
+
+    background: linear-gradient(270.21deg, rgba(255, 217, 196, 0.8) 18.08%, rgba(255, 255, 255, 0.8) 68.72%);
+  }
+
+  &::after {
+    top: auto;
+    right: auto;
+    bottom: -150%;
+    left: -25%;
+    background: linear-gradient(270.21deg, rgba(249, 139, 77, 0.8) 18.08%, rgba(255, 103, 82, 0.8) 68.72%);
+  }
+}

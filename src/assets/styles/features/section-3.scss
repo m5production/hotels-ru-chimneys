@@ -1,0 +1,27 @@
+.section-3 {
+  padding-bottom: 43px;
+
+  .section-heading {
+    background-image: linear-gradient(247.29deg, #FFFFFF 35.25%, rgba(255, 255, 255, 0) 104.81%);
+  }
+
+  .img-group {
+    position: relative;
+
+    img {
+      width: 100%;
+    }
+
+    .smart-speaker-name{
+      position: absolute;
+      top: 59.671%;
+      left: 18.844%;
+      color: black;
+
+      &.xiaomi {
+        left: auto;
+        right: 15.912%;
+      }
+    }
+  }
+}

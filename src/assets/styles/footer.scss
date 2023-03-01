@@ -1,0 +1,31 @@
+.footer {
+  border-top: 1px solid #232323;
+  background-color: #121212;
+  padding: 1.3rem 0 1.3rem;
+  color: #6D6D6D;
+  line-height: 18px;
+}
+
+.footer .content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: $standard-gap;
+  flex-wrap: wrap;
+}
+
+.first-part {
+  width: min(100%, 573px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: $standard-gap;
+  flex-wrap: wrap;
+}
+
+.middle-part {
+  display: flex;
+  justify-content: space-between;
+  gap: $standard-gap;
+  flex-wrap: wrap;
+}

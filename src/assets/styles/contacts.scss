@@ -1,0 +1,66 @@
+.contacts {
+  background-color: #121212;
+
+  .content-wrapper {
+    padding: 5rem 0 6.42rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+.contacts .heading-wrapper {
+  max-width: unset;
+  width: 100%;
+  margin-bottom: 5rem;
+
+  .section-heading {
+    margin-left: 0;
+    width: fit-content;
+    background-image: linear-gradient(191.91deg, #FFFFFF 27.36%, rgba(255, 255, 255, 0) 106.46%);
+  }
+}
+
+.first-contact-options {
+  display: flex;
+  justify-content: space-between;
+  width: min(100%, 620px);
+  gap: $standard-gap;
+
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 36px;
+}
+
+.mail-address {
+  color: #FFCF7A;
+}
+
+.last-contact-option {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: $standard-gap;
+
+  font-size: 36px;
+  font-weight: 250;
+  line-height: 33px;
+}
+
+.contact-manager-btn {
+  width: 279px;
+  height: 60px;
+  
+  background-color: transparent;
+  border-color: #CEB787;
+
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+
+  &::before,
+  &::after {
+    display: none;
+  }
+}

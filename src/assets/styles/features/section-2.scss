@@ -1,0 +1,147 @@
+.section-2 {
+  display: flex;
+  padding-bottom: 24.5rem;
+}
+
+.text-wrapper {
+
+  .section-heading,
+  .subheading {
+    text-align: left;
+
+  }
+
+  .section-heading {
+    background: linear-gradient(233.62deg, #FFFFFF 56.69%, rgba(255, 255, 255, 0) 108.2%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+}
+
+.section-2 .img-group {
+  position: relative;
+  width: 100%;
+
+  .filling-system {
+    position: absolute;
+    top: -100%;
+    left: -10%;
+    width: 900px;
+    z-index: -1;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 238px;
+    left: 269px;
+    width: 194px;
+    height: 194px;
+    border: 1px solid #FFCF7A;
+    border-radius: 50%;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 177px;
+    left: 184px;
+    width: 98px;
+    height: 98px;
+    border: 1px solid #FFCF7A;
+    border-radius: 50%;
+  }
+
+  .img-inscription-list {
+    position: absolute;
+    line-height: 24px;
+    top: 380px;
+    left: 60px;
+
+    &::before {
+      content: "";
+      text-align: center;
+      position: relative;
+      display: block;
+      width: 109px;
+      height: 20px;
+      background-image:
+        url('./assets/img/features/feature-2/decorative/hose-1.svg'),
+        url('./assets/img/features/feature-2/decorative/power-button-1.svg');
+      background-repeat: no-repeat no-repeat;
+      background-position:
+        left 0 top 0,
+        right 0 top 0;
+      margin-bottom: 20px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 30px;
+      border-top: 1px solid #6D6D6D;
+      top: 10px;
+      left: 40px;
+    }
+  }
+
+  .img-inscription-wrapper {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    right: 100px;
+    top: 87px;
+    border-radius: 50%;
+    background: radial-gradient(100% 65.98% at 100% 73.18%, #FFFFFF 0.31%, #FFE2A4 59.23%, #FFD47C 100%);
+
+    .highlighted {
+      position: static;
+      text-align: center;
+      color: black;
+      font-family: 'Scania Sans CY';
+
+      .bold-text {
+        font-size: 14px;
+        font-weight: 700;
+
+        .larger-font {
+          font-size: 27px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1330px) {
+  .section-2 {
+    flex-direction: column;
+    padding-bottom: $standard-gap;
+  }
+
+  .filling-system {
+    display: none;
+  }
+
+  .section-2 .img-group {
+    margin-top: $standard-gap;
+    height: 500px;
+    background-image:
+      // url('./assets/img/features/feature-2/decorative/Ellipse\ 2.svg'),
+      // url('./assets/img/features/feature-2/decorative/Ellipse\ 3.svg'),
+      url('./assets/img/features/feature-2/filling-nozzle.png');
+    background-repeat: no-repeat;
+    background-position:
+      // left 50% top 110%,
+      // left 37% top 60%,
+      center;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+}

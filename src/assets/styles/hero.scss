@@ -1,0 +1,52 @@
+.hero {
+  width: 100%;
+  margin: 92px 0 223px 0;
+  background-image: url('./assets/img/hero/kamin4-2.png');
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  background-size: 68%;
+  background-position: right 0 center;
+}
+
+.cost {
+  padding-bottom: 14rem;
+  font-weight: 300;
+  font-size: 1.9rem;
+  line-height: 2.8rem;
+
+  letter-spacing: 0.05em;
+
+  color: #FFCF7A;
+
+  .small-letters {
+    font-size: 1rem;
+  }
+}
+
+.hero-features {
+  max-width: 291px;
+  display: flex;
+  gap: 5.71rem;
+  line-height: 22px;
+
+  text-align: center;
+
+  .feature {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      top: -44px;
+      left: 50%;
+      transform: translate(-50%);
+      background-image: url('./assets/img/hero/decorative/gear.svg');
+    }
+
+    &.plane::before {
+      background-image: url('./assets/img/hero/decorative/plane.svg');
+    }
+  }
+}
